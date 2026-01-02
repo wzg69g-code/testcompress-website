@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>testcompress.com – PCB, EDA & Verification IP Services</title>
+  <meta name="description" content="testcompress.com provides PCB design, EDA services, Verification IP, and RTL design services including JTAG SVF simulation VIP, JTAG TAP controller RTL with user-defined TDRs, and iJTAG PDL/ICL to WGL pattern conversion." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --muted:#9fb0d0;
+      --text:#eaf0ff;
+      --brand:#6aa6ff;
+      --brand2:#7cffc6;
+      --line:rgba(255,255,255,.08);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:linear-gradient(180deg,#070a14,var(--bg));
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+    header{
+      position:sticky;top:0;z-index:10;
+      background:rgba(7,10,20,.8);
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(10px);
+    }
+    nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .brand{font-weight:800;font-size:18px}
+    .links a{margin-left:16px;color:var(--muted);font-weight:600}
+    .links a:hover{color:var(--text)}
+
+    .hero{padding:70px 0}
+    .hero h1{font-size:42px;margin:0 0 14px}
+    .hero p{color:var(--muted);max-width:720px}
+
+    .section{padding:50px 0}
+    h2{font-size:30px;margin-bottom:10px}
+    .lead{color:var(--muted);margin-bottom:24px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+
+    .card{
+      background:rgba(17,26,51,.75);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+
+    .card h3{margin:8px 0}
+    .card p{color:var(--muted);font-size:14px}
+
+    ul{padding-left:18px;color:var(--muted);font-size:14px}
+    li{margin:6px 0}
+
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{
+      font-size:12px;font-weight:800;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.05);
+      color:var(--muted);
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:30px 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* small polish for readability on mobile */
+    @media (max-width: 620px){
+      .hero h1{font-size:34px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">testcompress.com</div>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#licensing">Licensing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>PCB, EDA & Verification IP Services</h1>
+    <p>
+      testcompress.com delivers production-ready PCB design, EDA solutions,
+      commercial Verification IP, and RTL components for test, bring-up, and
+      silicon debug infrastructure.
+    </p>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
+    <p class="lead">Hardware design and verification support from concept to production.</p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>PCB Design & Layout</h3>
+        <ul>
+          <li>Schematic capture & library creation</li>
+          <li>2–12+ layer PCB layout</li>
+          <li>DFM / DFA review</li>
+          <li>Manufacturing-ready outputs</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>EDA & Design Support</h3>
+        <ul>
+          <li>Altium / KiCad / OrCAD workflows</li>
+          <li>Constraint management</li>
+          <li>Revision updates & ECOs</li>
+          <li>Prototype bring-up support</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Verification IP (VIP)</h3>
+        <p>
+          Commercial-quality VIPs and tooling for RTL and system-level simulation.
+        </p>
+        <ul>
+          <li>Standards-aligned protocol behavior</li>
+          <li>Simulator-agnostic integration</li>
+          <li>Documentation + example testbench</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>JTAG TAP Controller RTL</h3>
+        <p>
+          RTL implementation of a JTAG TAP controller with user-defined
+          Test Data Registers (TDRs), suitable for SoC and IP integration.
+        </p>
+        <ul>
+          <li>Compatible with IEEE 1149.1 and 1149.6</li>
+          <li>Configurable IR/DR length and instruction decode</li>
+          <li>User-defined TDR map with clean RTL interfaces</li>
+          <li>Optional guidance for BSDL and system integration</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">RTL (Verilog / SystemVerilog)</span>
+          <span class="tag">IEEE 1149.1 / 1149.6</span>
+          <span class="tag">Custom TDRs</span>
+          <span class="tag">SoC Integration</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="licensing" class="section">
+  <div class="container">
+    <h2>Licensing</h2>
+    <p class="lead">
+      Licensable building blocks and tooling for JTAG / boundary-scan and iJTAG pattern workflows.
+      Evaluation and commercial terms available upon request.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>JTAG SVF Simulation VIP</h3>
+        <p>
+          SVF-driven JTAG verification IP for simulation. Feed SVF command sequences and validate
+          TAP behavior and register accesses in RTL simulation.
+        </p>
+        <ul>
+          <li>SVF parsing and execution in simulation</li>
+          <li>Protocol-accurate TAP state sequencing</li>
+          <li>Trace/debug hooks for bring-up</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">SVF</span>
+          <span class="tag">JTAG</span>
+          <span class="tag">RTL Simulation</span>
+          <span class="tag">VIP</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>JTAG TAP Controller + User-Defined TDRs</h3>
+        <p>
+          Licensable TAP controller RTL with a configurable instruction set and user-defined
+          Test Data Registers (TDRs) for product features and debug.
+        </p>
+        <ul>
+          <li>IEEE 1149.1 / 1149.6 compatible architecture</li>
+          <li>Configurable IR/DR width, opcodes, and decode</li>
+          <li>Drop-in RTL with clear integration interfaces</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">RTL IP</span>
+          <span class="tag">Custom TDRs</span>
+          <span class="tag">SoC</span>
+          <span class="tag">Compliance</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>iJTAG PDL/ICL → WGL Pattern Conversion</h3>
+        <p>
+          Convert iJTAG descriptions and procedures into WGL patterns to support legacy ATE flows
+          and downstream pattern delivery.
+        </p>
+        <ul>
+          <li>PDL/ICL import and validation</li>
+          <li>Pattern generation/export to WGL</li>
+          <li>Flow customization for internal conventions</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">iJTAG</span>
+          <span class="tag">PDL</span>
+          <span class="tag">ICL</span>
+          <span class="tag">WGL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Sales</h2>
+    <p class="lead">
+      Request a quote, evaluation license, or technical discussion.
+    </p>
+
+    <div class="card">
+      <p><b>Email:</b> sales@testcompress.com</p>
+      <p><b>Engagement:</b> NDA-friendly · Remote worldwide</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <b>testcompress.com</b><br />
+    © <span id="year"></span> All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
